@@ -63,6 +63,29 @@ body {
   text-align: left;
   background-color: #e4e4e4;
 }
+.up-animation{
+  transform: translateY(0%) !important;
+
+}
+
+.initial-state{
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black; /* Cursor effect */
+  width: 100ch;
+  animation: typing 3s steps(100) 3s 1 normal both, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100ch; } /* Adjust based on text length */
+}
+
+/* Keyframes for cursor blink */
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
