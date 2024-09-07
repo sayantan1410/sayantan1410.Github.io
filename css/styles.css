@@ -36,11 +36,11 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 html {
   font-family: sans-serif;
@@ -59,32 +59,145 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color:#fff;
   text-align: left;
-  background-color: #e4e4e4;
-}
-.up-animation{
-  transform: translateY(0%) !important;
-
+  background-color:#0a0f11;
 }
 
-.initial-state{
+#header1 {
+  opacity: 0;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid black; /* Cursor effect */
-  width: 100ch;
-  animation: typing 3s steps(100) 3s 1 normal both, blink 0.5s step-end infinite;
+  margin-left: 50%;
+  transform: translateX(-48%);
+  border-right: 2px solid; 
+}
+
+/* Animation classes */
+
+.dropin-animation{
+  animation : dropin 2s ease-in-out;
+}
+
+.showup-animation{
+  animation: showup 2s ;
+}
+.hide-block-animation{
+  animation: hide-block 2s 0s 1 normal both;
+}
+.reveal-animation{
+  animation: reveal 2s ;
+}
+
+.slidein-animation{
+  animation: slidein 2s ;
+}
+
+.typing-animation{
+  opacity: 1 !important;
+  animation: typing 3s steps(30) 1s 1 normal both, blink 1s step-end;
+
+}
+
+.block-left-slide-animation{
+  animation: blockleftslide 2s cubic-bezier(.95, .12, .9, .98) 0s forwards;
+}
+
+.fade-animation{
+  opacity: 0;
+  animation: fade 3s 1s 1 normal both;
+}
+/* animation keyframes */
+
+@keyframes blockleftslide{
+  0% {
+    width: 0%;
+    left: 8%;
+
+  }
+  50% {
+    width: 84%;
+    left:  10%;
+
+  }
+  100% {
+    width: 0%;
+    left:95%;
+    visibility: hidden;
+  }
+}
+
+@keyframes dropin {
+  0% {transform: translateY(-10rem);}
+  100% {transform: translateY(0rem);}
+}
+
+@keyframes fade{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes bg-up{
+  0% {background-color: white;}
+  100% {transform: translateY(0%);}
+}
+
+@keyframes hide-block {
+  0% {background-color: None;}
+  33% {background-color:white}
+  66% {scale:1.1}
+  100% {background-color: None;}
+}
+
+@keyframes showup {
+  0% {opacity:0;}
+  100% {opacity:1;scale: 1.5em;}
+}
+
+@keyframes slidein {
+  0% { margin-left:-200px; }
+  100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+  0% {opacity:0;width:0px;}
+  20% {opacity:1;width:0px;}
+  30% {width:355px;}
+  80% {opacity:1;}
+  100% {opacity:0;width:355px;}
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 100ch; } /* Adjust based on text length */
+  to { width: 16ch; }
 }
 
-/* Keyframes for cursor blink */
 @keyframes blink {
-  from, to { border-color: transparent; }
-  50% { border-color: black; }
+  from, to { border-color:white; }
+  50% { border-color: white; }
+}
+
+/* CSS for Regular classes and styles */
+
+.initial-state{
+  overflow:hidden;
+  white-space:nowrap;
+  font-size: 1.5rem;
+  
+}
+
+.initial-state-div{
+  font-size: 1.5rem;
+}
+
+.left-fade-block{
+  height: 20%;
+  background: white;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  /* animation: blockleftslide 2s cubic-bezier(.74, .06, .4, .92) forwards; */
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -286,9 +399,9 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-.dark-mode {
-  background-color: #0a0f11;
-  color: white;
+.light-mode {
+  background-color: var(--light);
+  color: var(--gray);
 }
 button,
 input {
@@ -398,6 +511,22 @@ template {
 
 [hidden] {
   display: none !important;
+}
+
+.experience-paragraph{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-weight:1000;
+  list-style-type: disc;
+}
+
+.exp-block{
+  border-color: white;
+  border-radius: 5rem;
+  background-color: black;
+  margin-left: 3rem;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -606,6 +735,33 @@ pre code {
     max-width: 720px;
   }
 }
+
+@media (max-width: 800px) {
+  #header1 {
+    font-size: 3rem !important; 
+  }
+  .left-fade-block{
+    height: 35%;
+  }
+}
+
+@media (max-width: 500px) {
+  #header1 {
+    font-size: 1.5rem !important; 
+  }
+
+  .left-fade-block{
+    height: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .exp-block {
+    margin-left: 0.3rem;
+  }
+}
+
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
@@ -4397,7 +4553,7 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background: linear-gradient(45deg,var(--purple), var(--dark));
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -5035,15 +5191,18 @@ a.badge-dark:focus, a.badge-dark.focus {
   overflow: hidden;
   color: #fff;
   text-align: center;
+  width: 0%;
   white-space: nowrap;
-  background-color: lightskyblue;
-  transition: width 0.9 ease;
+  background-color: #303960;
+  transition: width 1s ease;
 }
+
+/* 
 @media (prefers-reduced-motion: reduce) {
   .progress-bar {
     transition: none;
   }
-}
+} */
 
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -6070,6 +6229,16 @@ a.close.disabled {
     transform: rotate(360deg);
   }
 }
+
+@keyframes progress-bar-movement {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+
 .spinner-border {
   display: inline-block;
   width: 2rem;
@@ -9755,7 +9924,7 @@ button.bg-dark:focus {
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -10054,7 +10223,6 @@ h3 {
 }
 body {
   padding-top: 3.375rem;
-  color: #6c757d;
 }
 
 @media (min-width: 992px) {
@@ -10085,6 +10253,7 @@ p.lead {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1rem;
+  position: relative;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -10215,7 +10384,10 @@ section.resume-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+  animation: bg-up 1s ease-in-out;
 }
+
+
 section.resume-section .resume-section-content {
   width: 100%;
 }

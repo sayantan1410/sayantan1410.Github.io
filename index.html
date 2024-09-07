@@ -52,22 +52,19 @@ should have a prior knowledge of git and version control, in the process we deci
     <!-- About-->
     <section class="resume-section" id="about">
       <div class="resume-section-content">
-        <h1 class="mb-0 text-center">
+        <h1 id = "header1" class="mb-0 text-center">
           <span class="text-primary">Sayantan</span>
           Sadhu
         </h1>
-        <div class="subheading mb-5 text-center">
+        <div id="subheading1" class="subheading mb-5 text-center">
           Email:
           <a href="mailto:sayantan.sadhu1410@gmail.com">sayantan.sadhu1410@gmail.com</a>
           <br>
           Phone: <a href="#">7003302025</a>
         </div>
-        <img class="top-img " src="sources/my_website1.svg" alt="">
-        <p class="initial-state lead mb-5">Hey There, Welcome to my website.
-           I am currently a final year undergrad at Kalyani Government Engineering College.
-            My expertise lies in the field of Machine Learning, Deep Learning and Computer Vision.
-          I am capable of building complete end-to-end ML/AI related projects. I also have working experience in Flask and Django. In case you need any of these skills feel free to contact me. Thank you.  </p>
-        <div class="social-icons">
+        <img class="top-img" src="sources/my_website1.svg" alt="">
+        <p class="mb-5 text-center"><div class="initial-state text-center">Hi there, welcome to my site. Hope you have a good time ! </div><div class="initial-state-div text-center"><span class="initial-state-span">Full Stack Development, LLM trainings and a lot of things in between !</span></div></p>
+        <div id = "social-icons" class="social-icons text-center">
           <a target="_blank" class="social-icon" href="https://www.linkedin.com/in/sayantan--/"><i class="fab fa-linkedin-in"></i></a>
           <a target="_blank" class="social-icon" href="https://github.com/sayantan1410"><i class="fab fa-github"></i></a>
           <a target="_blank" class="social-icon" href="https://sayantan-sadhu1410.medium.com/"><i class="fab fa-medium"></i></a>
@@ -76,109 +73,120 @@ should have a prior knowledge of git and version control, in the process we deci
         </div>
       </div>
     </section>
-
-    <hr class="m-0" />
     <!-- Experience-->
-    <section class="resume-section" id="experience">
+    <section class="resume-section text-center" id="experience">
       <div class="resume-section-content">
         <h2 class="mb-4">Experience</h2>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="exp-block d-flex flex-column flex-md-row mb-5 p-5 text-center">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">Systems Engineer</h3>
+            <div class="subheading">Tata Consultancy Services, India (Kolkata)</div>
+            <div class="flex-shrink-0 mb-3"><span class="text-primary"><b>Aug 2023 - Present</b></span></div>
+            <p class="experience-paragraph mx-5"><b>Worked as a full stack developer with Angular JS for the frontend along with HTML and CSS and Java, SpringBoot for the Backend. My work mainly included:
+              <ul class="experience-paragraph mx-5">
+                <li> Developed Multiple APIs (5+) using Spring Boot for developing key functionalities. Used JPA and Spring
+                  Data Repositories for fetching data from database and Angular JS for the front-end customization</li>
+                <li> Written functions and procedures in PL/SQL that reduces processing time by 5% for each call.</li>
+                <li> Eliminated approximately 300 defects (bugs) for the project.</li>
+                <li> Engineered core functionalities using RESTful API for automated policy renewal and complete policy
+                  workflow in Java; increased policy renewal efficiency by 4 times and decreased manual intervention by 90%.
+                  Also written scripts for automation testing using Selenium for the same</li>
+              </ul>
+            </b></p>
+          </div>
+        </div>
+        <div class="exp-block d-flex flex-column flex-md-row mb-5 p-5 text-center">
           <div class="flex-grow-1">
             <h3 class="mb-0">AI Algorithm Developer</h3>
-            <div class="subheading mb-3">Aarish Technologies, Canada (Remote)</div>
-            <p><b>Worked on optimisation of the training script for the paper "FaceNet: A Unified Embedding for Face Recognition and Clustering" 
+            <div class="subheading">Aarish Technologies, Canada (Remote)</div>
+            <div class="flex-shrink-0 mb-3"><span class="text-primary"><b>March 2022 - Present</b></span></div>
+            <p class="experience-paragraph mx-5"><b>Worked on optimisation of the training script for the paper "FaceNet: A Unified Embedding for Face Recognition and Clustering" 
               by Google and trained it on the VGG Face2 dataset with 3.3 million images. My work mainly included:
-              <ol> Writing code for creating triplets that is positive, negative and anchor image from the dataset and pass it to the dataloader.</ol>
-              <ol> Connecting our pytorch script with weights and biases for better visualization.</ol>
-              <ol> Tuning some important parameters like learning rate, margin of triplet loss and batch size.</ol>
-              <ol> Writing code that would truncate the parameters of the pytorch model to 8 bits at the time of training and also post training.</ol>
+              <ul class="experience-paragraph mx-5">
+                <li> Writing code for creating triplets that is positive, negative and anchor image from the dataset and pass it to the dataloader.</li>
+                <li> Optimized and trained Face Net's embedding model using triplet loss on the VGG Face2 dataset
+                  containing 3.3 million images. Also successfully reduced model size by 25% through stage two quantization.</li>
+                <li> Tuning some important parameters like learning rate, margin of triplet loss and batch size.</li>
+                <li> Writing code that would truncate the parameters of the pytorch model to 8 bits at the time of training and also post training.</li>
+              </ul>
             </b></p>
           </div>
-          <div class="flex-shrink-0"><span class="text-primary">March 2022 - Present</span></div>
         </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class=" exp-block d-flex flex-column flex-md-row justify-content mb-5 p-5">
           <div class="flex-grow-1">
             <h3 class="mb-0">AI/ML Consultant </h3>
-            <div class="subheading mb-3">Averyx Group, Dubai (Remote)</div>
-            <p><b>I was responsible for working on a project that recommends the best stocks to a customer from a pool of around 10k stocks.
+            <div class="subheading">Averyx Group, Dubai (Remote)</div>
+            <div class="flex-shrink-0 mb-3"><span class="text-primary">June 2021 - December 2021</span></div>
+            <p class="experience-paragraph mx-5"><b>I was responsible for working on a project called TechScreener that recommends the best stocks to a customer from a pool of around 10k stocks.
               I had developed the ranking system and worked on data pipelining, development of strategies and calculating return percentages
-              using a library called backtesting.py . The tech stack included Flask, Bootstrap, backtesting.py and other ML related libraries. 
+              using a library called backtesting.py . The Backend for the application was build with django and postgresql and for the frontend technology we had used HTML, CSS and vanilla JavaScript
             </b></p>
           </div>
-          <div class="flex-shrink-0"><span class="text-primary">June 2021 - December 2021</span></div>
         </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="exp-block p-5 d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
             <h3 class="mb-0">Machine Learning Educator Intern</h3>
-            <div class="subheading mb-3">Acadboost Private Limited, India (Remote)</div>
-            <p><b>My job at Acadboost was to create a full fledged 25 hours course on Machine Learning for poeple who are absolutely beginner in Programming
+            <div class="subheading">Acadboost Private Limited, India (Remote)</div>
+            <div class="flex-shrink-0 mb-3"><span class="text-primary">August 2020 - October 2020</span></div>
+            <p class = "experience-paragraph mx-5"><b>My job at Acadboost was to create a full fledged 25 hours course on Machine Learning for poeple who are absolutely beginner in Programming
               The Course included tutorials on Python, Numpy, Pandas, Matplotlib, Seaborn, Sci-kit Learn, thoery and application of some ML algorithms like
               Linear Regression, Logistic Regression, Decision Tree and Random Forest, some feature engineering techniques like handling missing values, outliers
               and categorical variables and some introduction to deep learning. 
             </b></p>
           </div>
-          <div class="flex-shrink-0"><span class="text-primary">August 2020 - October 2020</span></div>
         </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="exp-block p-5 d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
             <h3 class="mb-0">Core Team Member</h3>
-            <div class="subheading mb-3">Google Developers Students Club, KGEC</div>
-            <p><b>My duty at my college's Developer Club is to promote Machine Learning to all the students interested in ML. Recruit People who are good at Machine Learning to the Club
+            <div class="subheading">Google Developers Students Club, KGEC</div>
+            <div class="flex-shrink-0 mb-3"><span class="text-primary">March 2020 - Present</span></div>
+            <p class = "experience-paragraph mx-5"><b>My duty at my college's Developer Club is to promote Machine Learning to all the students interested in ML. Recruit People who are good at Machine Learning to the Club
               Conduct Ocassional sessions that focuses on different Machine Learning Ideas. 
             </b></p>
           </div>
-          <div class="flex-shrink-0"><span class="text-primary">March 2020 - Present</span></div>
         </div>
-        <!-- you can add more experiences as per your needs -->
-
-        <!-- <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Heading</h3>
-                            <div class="subheading mb-3">Sub Heading, details</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div> -->
       </div>
     </section>
     <hr class="m-0" />
     <!-- Education-->
     <section class="resume-section" id="education">
-      <div class="resume-section-content">
+      <div class="resume-section-content text-center">
         <h2 class="mb-4">Education</h2>
         <img class="edu-img " src="sources/education.svg" alt="">
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="flex-grow-1">
+          <div id = "ed-1" class="flex-grow-1 text-center">
+            <div id = "ed-fade-1" class="left-fade-block">.</div>
             <h3 class="mb-0">Kalyani Government Engineering College</h3>
             <div class="subheading mb-3">Bachelor of Technology, Information Technology</div>
+            <span class="text-primary">August 2019 - July 2023</span>
             <p>Current CGPA - 9.41</p>
           </div>
-          <div class="flex-shrink-0"><span class="text-primary">August 2019 - July 2023</span></div>
         </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-          <div class="flex-grow-1">
+        <br>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5 ed2">
+          <div id = "ed-2" class="flex-grow-1 text-center">
+            <div id = "ed-fade-2" class="left-fade-block">.</div>
             <h3 class="mb-0">St.Luke's Day School</h3>
             <div class="subheading mb-3">High School</div>
+            <span class="text-primary"> 2003 - 2017</span>
             <p>Class 10 Overall Score - 91.8 %</p>
           </div>
-          <div class="flex-shrink-0"><span class="text-primary"> 2003 - 2017</span></div>
         </div>
         <br>
-        <br>
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-          <div class="flex-grow-1">
+        <div class="d-flex flex-column flex-md-row justify-content-between ed3">
+          <div id = "ed-3" class="flex-grow-1 text-center">
+            <div id = "ed-fade-3" class="left-fade-block">.</div>
             <h3 class="mb-0">Kanchrapara Harnett English Medium School</h3>
             <div class="subheading mb-3">Senior Secondary</div>
+            <span class="text-primary">2017 - 2019</span>
             <p>Class 12 Overall Score - 84 % </p>
           </div>
-          <div class="flex-shrink-0"><span class="text-primary">2017 - 2019</span></div>
         </div>
       </div>
     </section>
-    <hr class="m-0" />
     <!-- Skills-->
     <section class="resume-section" id="skills">
-      <div class="resume-section-content">
+      <div class="resume-section-content text-center">
         <h2 class="mb-4">Skills</h2>
         <div class="subheading mb-3">Programming and Other Languages</div>
         <ul class="list-inline dev-icons">
@@ -195,7 +203,7 @@ should have a prior knowledge of git and version control, in the process we deci
           <div class="progress-bar-wrap">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100" style="width:95%">
+              aria-valuemin="0" aria-valuemax="100" data-target-width="95%">
               </div>
             </div>
           </div>
@@ -205,8 +213,8 @@ should have a prior knowledge of git and version control, in the process we deci
           </span>
           <div class="progress-bar-wrap">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100" style="width:85%">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85"
+              aria-valuemin="0" aria-valuemax="100" data-target-width="85%">
               </div>
             </div>
           </div>
@@ -216,8 +224,8 @@ should have a prior knowledge of git and version control, in the process we deci
           </span>
           <div class="progress-bar-wrap">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100" style="width:50%">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100" data-target-width="50%">
               </div>
             </div>
           </div>
@@ -228,7 +236,7 @@ should have a prior knowledge of git and version control, in the process we deci
           <div class="progress-bar-wrap">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100" style="width:80%">
+              aria-valuemin="0" aria-valuemax="100" data-target-width="80%">
               </div>
             </div>
           </div>
@@ -239,7 +247,7 @@ should have a prior knowledge of git and version control, in the process we deci
           <div class="progress-bar-wrap">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100" style="width:90%">
+              aria-valuemin="0" aria-valuemax="100" data-target-width="90%">
               </div>
             </div>
           </div>
@@ -250,7 +258,7 @@ should have a prior knowledge of git and version control, in the process we deci
           <div class="progress-bar-wrap">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100" style="width:95%">
+              aria-valuemin="0" aria-valuemax="100" data-target-width="95%">
               </div>
             </div>
           </div>
@@ -261,7 +269,7 @@ should have a prior knowledge of git and version control, in the process we deci
           <div class="progress-bar-wrap">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100" style="width:90%">
+              aria-valuemin="0" aria-valuemax="100" data-target-width="90%">
               </div>
             </div>
           </div>
@@ -272,7 +280,7 @@ should have a prior knowledge of git and version control, in the process we deci
           <div class="progress-bar-wrap">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100" style="width:80%">
+              aria-valuemin="0" aria-valuemax="100" data-target-width="80%">
               </div>
             </div>
           </div>
@@ -283,7 +291,7 @@ should have a prior knowledge of git and version control, in the process we deci
           <div class="progress-bar-wrap">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100" style="width:60%">
+              aria-valuemin="0" aria-valuemax="100" data-target-width="60%">
               </div>
             </div>
           </div>
@@ -293,14 +301,14 @@ should have a prior knowledge of git and version control, in the process we deci
     <hr class="m-0" />
     <!-- Interests-->
     <section class="resume-section" id="projects">
-      <div class="resume-section-content">
+      <div class="resume-section-content text-center">
         <h2 class="mb-4">Notebooks, Blogs and Projects</h2>
-        <p>I am guy loves to participate in competitions and hackathons. In my free time I develop simple website with data analysis or machine learning implementation in it. 
+        <p>I am a guy who loves to participate in competitions and hackathons. In my free time I develop simple website with data analysis or machine learning implementation in it. 
           The websites are mostly developed with the help of flask, rarely I use Django as well. Here I have displayed a few solutions from some of the hackathons that I have participated in.
         </p>
         <div class="row project-cards mx-auto align-items-center">
-          <div class="col-md-4 mb-4 mx-auto">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mx-auto">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Notebook</h5>
                 <p class="card-text">This is the notebook for the submission of the TPS competition in kaggle. I got a top 15 % finish with this.</p>
@@ -308,8 +316,8 @@ should have a prior knowledge of git and version control, in the process we deci
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 mx-auto">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mx-auto">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Notebook</h5>
                 <p class="card-text">This is a notebook where I have used transfer learning with VGG16 on the Cat and Dog dataset</p>
@@ -317,8 +325,8 @@ should have a prior knowledge of git and version control, in the process we deci
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 mx-auto">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mx-auto">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Notebook</h5>
                 <p class="card-text">My notebook on the Kaggle competition to detect gravitational wave signal from detector noise.
@@ -329,8 +337,8 @@ should have a prior knowledge of git and version control, in the process we deci
           </div>
         </div>
         <div class="row project-cards mx-auto align-items-center">
-          <div class="col-md-4 mb-4 mx-auto">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mx-auto">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Blog</h5>
                 <p class="card-text">Here, I have discussed everything about Logistic regression. It contains everything from theory to code implementation and also got a great feedback.</p>
@@ -338,8 +346,8 @@ should have a prior knowledge of git and version control, in the process we deci
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 mx-auto">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mx-auto">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Blog</h5>
                 <p class="card-text">This is a Technical Blog that I wrote about outliers that tries to explain what are outliers are including its mathematics and intuition and how they impact predictions</p>
@@ -347,19 +355,19 @@ should have a prior knowledge of git and version control, in the process we deci
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 mx-auto">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mx-auto">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Blog</h5>
                 <p class="card-text">This blog is written for absolute beginners, giving them an idea about what are the important concepts that one needs to understand to learn machine learning.</p>
-                <a href="https://sayantan-sadhu1410.medium.com/topics-to-cover-as-a-beginner-in-machine-learning-d8818a21ee01" class="btn btn-primary">Visti The Blog</a>
+                <a href="https://sayantan-sadhu1410.medium.com/topics-to-cover-as-a-beginner-in-machine-learning-d8818a21ee01" class="btn btn-primary">Visit The Blog</a>
               </div>
             </div>
           </div>
         </div>
         <div class="row project-cards mx-auto align-items-center">
-          <div class="col-md-4 mb-4 mx-auto">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mx-auto">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Blog</h5>
                 <p class="card-text">This is a project where I have scrapped some economical data of India from the Internet using beautiful soup</p>
@@ -367,8 +375,8 @@ should have a prior knowledge of git and version control, in the process we deci
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 mx-auto">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mx-auto">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Project</h5>
                 <p class="card-text">This is the submission repository for the evaluation for the project of Deeplense of organization ML4SCI</p>
@@ -376,8 +384,8 @@ should have a prior knowledge of git and version control, in the process we deci
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 mx-auto">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mx-auto">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Project</h5>
                 <p class="card-text">This is still a on going project where I try to visualize different aspects of Indian states and India as a whole</p>
@@ -391,13 +399,13 @@ should have a prior knowledge of git and version control, in the process we deci
     <hr class="m-0" />
     <!-- Awards-->
     <section class="resume-section" id="awards">
-      <div class="resume-section-content">
+      <div class="resume-section-content text-center">
         <h2 class="mb-4">Awards & Certifications</h2>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 mx-auto">
             <ul class="fa-ul mb-0">
               <li>
-                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                <span class="fa-li"><i class="fas fa-trophy text-warning "></i></span>
                 Open Source Contributor to Microsoft/LightGBM,Pytorch-Ignite/code-generator,Pycaret and more 
               </li>
               <li>
@@ -419,7 +427,7 @@ should have a prior knowledge of git and version control, in the process we deci
 
             </ul>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 mt-4">
             <img class="awards-img " src="sources/certificate1.svg" alt="">
           </div>
         </div>
