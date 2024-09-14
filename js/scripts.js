@@ -89,31 +89,41 @@ window.addEventListener("scroll", function() {
     experience_paragraph[0].classList.remove("hide-block-animation");
     experience_paragraph[1].classList.remove("hide-block-animation");
 
-
   }
 
-  if (scrollPosition >1200){
+  if (scrollPosition > 1350){
     experience_paragraph[2].classList.add("hide-block-animation");
+    experience_paragraph[3].classList.add("hide-block-animation");
+
   }
   else{
     experience_paragraph[2].classList.remove("hide-block-animation");
-  }
-
-  if (scrollPosition >1600){
-    experience_paragraph[3].classList.add("hide-block-animation");
-  }
-  else{
     experience_paragraph[3].classList.remove("hide-block-animation");
+
   }
 
-  if (scrollPosition >1900){
+  if (scrollPosition >2000){
     experience_paragraph[4].classList.add("hide-block-animation");
   }
   else{
     experience_paragraph[4].classList.remove("hide-block-animation");
   }
 
-  if (scrollPosition >2900){
+  if (scrollPosition >2400){
+    experience_paragraph[5].classList.add("hide-block-animation");
+  }
+  else{
+    experience_paragraph[5].classList.remove("hide-block-animation");
+  }
+
+  if (scrollPosition >2700){
+    experience_paragraph[6].classList.add("hide-block-animation");
+  }
+  else{
+    experience_paragraph[6].classList.remove("hide-block-animation");
+  }
+
+  if (scrollPosition >3530){
     ed_fade_1.classList.add("block-left-slide-animation");
     ed_1.classList.add("fade-animation");
   }
@@ -122,7 +132,7 @@ window.addEventListener("scroll", function() {
     ed_1.classList.remove("fade-animation");
   }
 
-  if (scrollPosition >3100){
+  if (scrollPosition >3652){
     ed_fade_2.classList.add("block-left-slide-animation");
     ed_2.classList.add("fade-animation");
   }
@@ -131,7 +141,7 @@ window.addEventListener("scroll", function() {
     ed_2.classList.remove("fade-animation");
   }
 
-  if (scrollPosition > 3200){
+  if (scrollPosition > 3880){
     ed_fade_3.classList.add("block-left-slide-animation");
     ed_3.classList.add("fade-animation");
   }
@@ -139,7 +149,7 @@ window.addEventListener("scroll", function() {
     ed_fade_3.classList.remove("block-left-slide-animation");
     ed_3.classList.remove("fade-animation");
   }
-  if (scrollPosition >4000){
+  if (scrollPosition >4600){
     progressBars.forEach(function(progressBar) {
       const targetWidth = progressBar.getAttribute('data-target-width');
       progressBar.style.width = targetWidth;

@@ -100,7 +100,7 @@ body {
 }
 
 .block-left-slide-animation{
-  animation: blockleftslide 2s cubic-bezier(.95, .12, .9, .98) 0s forwards;
+  animation: blockleftslide 2s cubic-bezier(0, 0, .9, .98) 0s forwards;
 }
 
 .fade-animation{
@@ -4585,6 +4585,7 @@ input[type=button].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
+  color: white !important;
 }
 
 .card-subtitle {
