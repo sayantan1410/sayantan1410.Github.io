@@ -1,4 +1,12 @@
 # sayantan1410
-This is my portfolio website which is hosted using Github Pages. The development is not yet complete and some parts of it yet to be done. 
-# Credits
-The code template is taken from: https://github.com/Mozilla-Chandigarh/my_portfolio
+
+### About
+A simple website designed using HTML, CSS and Javascript that showcases my experience and work in the field of software engineering and my education related to it.
+
+### Hosting
+This is a static website deployed using Github Pages.
+
+### Local Start-up
+- Clone the repository.
+- Open the index.html file in any browser.
+
